@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>CoderCasa - Register</title>
+    <!-- Favicons -->
+    <link href="assets/img/favicon.png" rel="icon">
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Raleway:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+        rel="stylesheet">
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <!-- Template Main CSS File -->
+    <link href="assets/css/main.css" rel="stylesheet">
+    <link href="assets/css/register.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- ======= Header ======= -->
+    <section id="topbar" class="topbar d-flex align-items-center">
+        <div class="container d-flex justify-content-center justify-content-md-between">
+            <div class="contact-info d-flex align-items-center">
+                <i class="bi bi-envelope d-flex align-items-center"><a
+                        href="mailto:CoderCasa@gmail.com">CoderCasa@gmail.com</a></i>
+                <i class="bi bi-phone d-flex align-items-center ms-4"><span>+54 0800 444 4512</span></i>
+            </div>
+            <div class="social-links d-none d-md-flex align-items-center">
+                <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+                <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+                <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+                <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></i></a>
+            </div>
+        </div>
+    </section><!-- End Top Bar -->
+
+    <header id="header" class="header d-flex align-items-center">
+
+        <div class="container-fluid container-xl d-flex align-items-center">
+            <a href="index.html" class="logo d-flex align-items-center">
+                <!-- <img src="assets/img/logo.png" alt=""> -->
+                <h1>CoderCasa<span>.</span></h1>
+            </a>
+            <nav id="navbar" class="navbar">
+                <ul>
+                    <li><a href="#hero">Inicio</a></li>
+                    <li><a href="#about">Programa</a></li>
+                    <li><a href="#cursos">Cursos</a></li>
+                    <li><a href="#">Contacto</a></li>
+                </ul>
+            </nav><!-- .navbar -->
+            <div class="ms-auto">
+                <a href="#" class="login d-none d-md-inline">Ingresá</a>
+                <a href="#" class="login d-none d-md-inline">Registrarse</a>
+            </div>
+
+            <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
+            <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
+
+        </div>
+    </header><!-- End Header -->
+    <!-- End Header -->
+
+    <main id="main">
+        <section class="pricing sections-bg">
+            <div class="container col-lg-6 modal-registro">
+                <div class="pricing-item">
+                    <h1><strong>Registro</strong></h1>
+                    <form class="needs-validation" novalidate>
+                        <div class="row">
+                            <div class="col-lg-3">
+                                <label class="form-label" for="name">Nombre</label>
+                                <label class="form-label obligatorio" for="name">*</label>
+                                <div class="input-group mb-3">
+                                    <input type="text" class="form-control" id="name" aria-describedby="basic-addon3" required>
+                                    <div class="invalid-feedback">
+                                        Nombre obligatorio.
+                                      </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3">
+                                <label class="form-label" for="lastName">Apellido</label>
+                                <label class="form-label obligatorio" for="name">*</label>
+                                <div class="input-group mb-3">
+                                    <input type="text" class="form-control" id="lastName" aria-describedby="basic-addon3" required>
+                                    <div class="invalid-feedback">
+                                        Apellido obligatorio.
+                                      </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <label class="form-label" for="email">Mail</label>
+                                <label class="form-label obligatorio" for="name">*</label>
+                                <div class="input-group mb-3">
+                                    <input type="email" class="form-control" id="email" aria-describedby="basic-addon3" required>
+                                    <div class="invalid-feedback">
+                                        Tenes que proporcionar tu email.
+                                      </div>
+                                </div>
+                                <p>Lo vamos a usar para darte acceso</p>
+                            </div>
+       
+                            <div class="col-lg-6"></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <label class="form-label" for="emailConfirm">Confirma tu  mail</label>
+                                <label class="form-label obligatorio" for="name">*</label>
+                                <div class="input-group mb-3">
+                                    <input type="email" class="form-control" id="emailConfirm" aria-describedby="basic-addon3" required>
+                                    <div class="invalid-feedback">
+                                        Tenes que confirmar tu email.
+                                      </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <label class="form-label" for="phone">Telefono</label>
+                                <label class="form-label obligatorio" for="name">*</label>
+                                <div class="input-group mb-3">
+                                    <input type="tel" class="form-control" id="phone" aria-describedby="basic-addon3" required>
+                                    <div class="invalid-feedback">
+                                        Teléfono obligatorio.
+                                      </div>
+                                </div>
+                            </div>
+       
+                            <div class="col-lg-6"></div>
+                        </div>  
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <label class="form-label" for="dni">DNI</label>
+                                <label class="form-label obligatorio" for="name">*</label>
+                                <div class="input-group mb-3">
+                                    <input type="number" class="form-control" id="dni" aria-describedby="basic-addon3" required>
+                                    <div class="invalid-feedback">
+                                        DNI obligatorio.
+                                      </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                              <label class="form-label" for="dni">Provincia</label>
+                              <label class="form-label obligatorio" for="name">*</label>
+                                <div class="input-group">
+                                  <div class="input-group-prepend">
+                                    <button class="btn dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Seleccionar</button>
+                                    <div id="dropdown" class="dropdown-menu">
+                                      <a class="dropdown-item" href="#">Buenos Aires</a>
+                                      <a class="dropdown-item" href="#">Catamarca</a>
+                                      <a class="dropdown-item" href="#">Chaco</a>
+                                      <a class="dropdown-item" href="#">Chubut</a>
+                                      <a class="dropdown-item" href="#">Córdoba</a>
+                                      <a class="dropdown-item" href="#">Corrientes</a>
+                                      <a class="dropdown-item" href="#">Entre Ríos</a>
+                                      <a class="dropdown-item" href="#">Formosa</a>
+                                      <a class="dropdown-item" href="#">Jujuy</a>
+                                      <a class="dropdown-item" href="#">La Pampa</a>
+                                      <a class="dropdown-item" href="#">La Rioja</a>
+                                      <a class="dropdown-item" href="#">Mendoza</a>
+                                      <a class="dropdown-item" href="#">Misiones</a>
+                                      <a class="dropdown-item" href="#">Neuquén</a>
+                                      <a class="dropdown-item" href="#">Río Negro</a>
+                                      <a class="dropdown-item" href="#">Salta</a>
+                                      <a class="dropdown-item" href="#">San Juan</a>
+                                      <a class="dropdown-item" href="#">San Luis</a>
+                                      <a class="dropdown-item" href="#">Santa Cruz</a>
+                                      <a class="dropdown-item" href="#">Santa Fe</a>
+                                      <a class="dropdown-item" href="#">Santiago del Estero</a>
+                                      <a class="dropdown-item" href="#">Tierra del Fuego</a>
+                                      <a class="dropdown-item" href="#">Tucumán</a>
+                                    </div>
+                                  </div>
+                                  <input type="text" class="form-control" aria-label="Text input with dropdown button" required>
+                                  <div class="invalid-feedback">
+                                    Debe elegir una provincia.
+                                  </div>
+                                </div>
+                              </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="form-check">
+                              <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                              <label class="form-check-label" for="invalidCheck">
+                                Acepto los términos y condiciones.
+                              </label>
+                              <div class="invalid-feedback">
+                                tenes que aceptar los términos y condiciones.
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-12 d-flex flex-row-reverse">
+                            <button class="login d-none d-md-inline" type="submit">Siguiente</button>
+                          </div>
+                    </form>
+                </div>
+            </div><!-- End Pricing Item -->
+        </section>
+    </main>
+
+    <!-- ======= Footer ======= -->
+    <footer id="footer" class="footer">
+
+        <div class="container">
+            <div class="row gy-4">
+                <div class="col-lg-5 col-md-12 footer-info">
+                    <a href="index.html" class="logo d-flex align-items-center">
+                        <span>CoderCasa</span>
+                    </a>
+                    <div class="social-links d-flex mt-4">
+                        <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+                        <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+                        <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+                    </div>
+                </div>
+
+                <div class="col-lg-2 col-6 footer-links">
+                    <h4>Nosotros</h4>
+                    <ul>
+                        <li><a href="#">Equipo</a></li>
+                        <li><a href="#">Preguntas frecuentes</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-2 col-6 footer-links">
+                    <h4>Alumnos</h4>
+                    <ul>
+                        <li><a href="#">Portal</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Experiencias</a></li>
+                        <li><a href="#">Portal de empleos</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
+                    <h4>Corporativo</h4>
+                    <ul>
+                        <a href="#">Capacitaciones</a>
+                    </ul>
+
+                </div>
+
+            </div>
+        </div>
+    </footer><!-- End Footer -->
+    <!-- End Footer -->
+
+    <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i
+            class="bi bi-arrow-up-short"></i></a>
+
+    <div id="preloader"></div>
+
+    <!-- Vendor JS Files -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" ></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+
+    <!-- Template Main JS File -->
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/register.js"></script>
+</body>
+
+</html>
