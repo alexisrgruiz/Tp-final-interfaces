@@ -330,7 +330,7 @@ section {
   background: var(--color-primary);
   border: 0;
   padding: 14px 14px;
-  color: var(--color-default);
+  color: var(--color-gray);
   transition: 0.4s;
   border-radius: 60px;
   font-family: var(--font-secondary);
@@ -341,8 +341,9 @@ section {
 
 .login:hover {
   background:var(--color-default) ;
-  color: rgba(255, 255, 255, 0.6);
-  border: 2px solid;
+  color: var(--color-primary);
+  font-weight: 700 !important;
+  border: 3px solid;
   border-color: var(--color-primary);
 }
 
@@ -376,6 +377,40 @@ section {
 }
 
 /* cursos */
+.curso-header {
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+.curso-header h2 {
+  font-size: 32px;
+  font-weight: 900 !important;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  position: relative;
+  color: var(--color-default);
+}
+.curso-header p {
+  font-size: 18px;
+  font-weight: 600 !important;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  position: relative;
+  color: var(--color-default);
+}
+
+.curso-header h2:after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 150px;
+  height: 3px;
+  background: var(--color-primary);
+  left: 0;
+
+  bottom: 0;
+  margin: auto;
+}
 .breadcrumbs {
   text-align: center;
   background: var(--color-default);
@@ -459,7 +494,7 @@ section {
   color: var(--color-default);
 }
 
-.courses .guardar-btn {
+.guardar-btn {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 14px;
@@ -473,10 +508,211 @@ section {
   background-color: var(--color-default);
 }
 
-.courses .guardar-btn:hover {
+.guardar-btn:hover {
   background: var(--color-primary);
   color: var(--color-default);
   font-weight: 800;
+}
+.aGuardar{
+  color: var(--color-gray);
+}
+.aGuardar i{
+  padding-right: 10px;
+}
+.aGuardar:hover{
+  color: var(--color-gray);
+}
+.courses .swiper-pagination {
+  margin-top: 20px;
+  position: relative;
+}
+
+.courses .swiper-pagination .swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  background-color: #fff;
+  opacity: 1;
+  background-color: #ddd;
+}
+
+.courses .swiper-pagination .swiper-pagination-bullet-active {
+  background-color: var(--color-primary);
+}
+
+.play-btn {
+  margin-top: 132px !important;
+  width: 94px;
+  height: 94px;
+  margin: 0 auto;
+  background: radial-gradient(#D3F263 50%, #b5e700 52%);
+  border-radius: 50%;
+  display: block;
+  overflow: hidden;
+  position: relative;
+}
+
+.play-btn::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-40%) translateY(-50%);
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left: 15px solid #fff;
+  z-index: 100;
+  transition: all 400ms cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}
+
+.play-btn::before {
+  content: "";
+  position: absolute;
+  width: 120px;
+  height: 120px;
+  animation-delay: 0s;
+  animation: pulsate-btn 3s;
+  animation-direction: forwards;
+  animation-iteration-count: infinite;
+  animation-timing-function: steps;
+  opacity: 1;
+  border-radius: 50%;
+  border: 5px solid var(--color-secondary);
+  top: -15%;
+  left: -15%;
+  background: rgba(198, 16, 0, 0);
+}
+
+.play-btn:hover::after {
+  border-left: 15px solid var(--color-secondary);
+  transform: scale(20);
+}
+
+.play-btn:hover::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-40%) translateY(-50%);
+  width: 0;
+  height: 0;
+  border: none;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left: 15px solid #fff;
+  z-index: 200;
+  animation: none;
+  border-radius: 0;
+}
+
+/*--------------------------------------------------------------
+# Resume
+--------------------------------------------------------------*/
+.resume .resume-title {
+  font-size: 26px;
+  font-weight: 400;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: #222222;
+}
+.resume .contenedor{
+  padding: 40px 20px;
+  box-shadow: 0 3px 20px -2px var(--color-gray);
+  background: #fff;
+  height: 100%;
+  position: relative;
+  border-radius: 15px;
+}
+.video{
+  padding: 40px 20px;
+  background: var(--color-gray);
+  height: 450px;
+  width: 70%;
+  position: relative;
+  border-radius: 15px;
+}
+
+.resume .resume-item {
+  padding: 0 0 20px 20px;
+  margin-top: -2px;
+  border-left: 2px solid var(--color-secondary);
+  position: relative;
+}
+
+.resume .resume-item h4 {
+  line-height: 18px;
+  font-size: 18px;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+  color: #1d685f;
+  margin-bottom: 10px;
+}
+.resume .resume-item h4 a{
+  line-height: 18px;
+  font-size: 18px;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+  color: var(--color-gray);
+  margin-bottom: 10px;
+}
+
+.resume .resume-item h5 {
+  font-size: 16px;
+  background: #effbf9;
+  padding: 5px 15px;
+  display: inline-block;
+  font-weight: 800;
+  margin-bottom: 10px;
+  color: var(--color-secondary);
+}
+
+.resume .resume-item ul {
+  padding-left: 20px;
+}
+
+.resume .resume-item ul li {
+  padding-bottom: 10px;
+}
+
+.resume .resume-item:last-child {
+  padding-bottom: 0;
+}
+
+.resume .resume-item::before {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border-radius: 50px;
+  left: -9px;
+  top: 0;
+  background: #fff;
+  border: 2px solid var(--color-secondary);
+}
+
+
+/*--------------------------------------------------------------
+# Counts
+--------------------------------------------------------------*/
+.counts {
+  background: var(--color-primary);
+  padding: 40px 0 20px 0;
+  color: var(--color-gray);
+}
+
+.counts .counters span {
+  font-size: 36px;
+  display: block;
+  font-weight: 700;
+}
+
+.counts .counters p {
+  padding: 0;
+  margin: 0 0 20px 0;
+  font-family: "Raleway", sans-serif;
+  font-size: 15px;
+  font-weight: 500;
 }
 /*--------------------------------------------------------------
 # Desktop Navigation
@@ -1591,18 +1827,17 @@ section {
   padding: 10px 40px;
   border-radius: 50px;
   background: var(--color-primary);
-  color: #fff;
+  color: var(--color-gray);
   transition: none;
-  font-size: 16px;
-  font-weight: 600;
+  font-size: 14px;
+  font-weight: 800 !important;
   font-family: var(--font-primary);
   transition: 0.3s;
 }
 
 .pricing .buy-btn:hover {
   color: var(--color-primary);
-  background: #fff;
-  border: 1px solid var(--color-primary) ;
+  background: var(--color-gray);
 }
 
 .pricing .featured {
