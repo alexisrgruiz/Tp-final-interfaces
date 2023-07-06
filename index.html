@@ -49,14 +49,35 @@
       <nav id="navbar" class="navbar">
         <ul >
           <li><a href="#hero">Inicio</a></li>
-          <li><a href="#about">Programa</a></li>
-          <li><a href="#cursos">Cursos</a></li>
+          <li><a href="#about">Programá</a></li>
+          <li class="dropdown"><a href="#"><span>Cursos</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+            <ul>
+              <li><a href="#">Testing</a></li>
+              <li class="dropdown"><a href="#"><span>Desarrollo web</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+                <ul>
+                  <li><a href="#">Java</a></li>
+                  <li><a href="#">Python</a></li>
+                  <li><a href="#">Javascript</a></li>
+                  <li><a href="#">Angular</a></li>
+                  <li><a href="#">Typescript</a></li>
+                </ul>
+              </li>
+              <li class="dropdown"><a href="#"><span>Desarrollo mobile</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+                <ul>
+                  <li><a href="#">Kotlin</a></li>
+                  <li><a href="#">Google</a></li>
+                  <li><a href="#">Dark</a></li>
+                  <li><a href="#">React Native</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
           <li><a href="#">Contacto</a></li>
         </ul>
       </nav><!-- .navbar -->
         <div class="ms-auto">
-          <a href="#" class="login d-none d-md-inline">Ingresá</a>
-          <a href="#" class="login d-none d-md-inline">Registrarse</a>
+          <a href="login.html" class="login d-none d-md-inline">Ingresá</a>
+          <a href="register.html" class="login d-none d-md-inline">Registrarse</a>
         </div>
 
       <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
@@ -77,7 +98,6 @@
           <p>Si quieres aumentar tus ingresos, sumar nuevas habilidades profesionales o probar si realmente este es tu camino, estudiar programación es la clave.</p>
           <div class="d-flex justify-content-center justify-content-lg-start">
             <a href="#about" class="btn-get-started">Comenzar</a>
-            <a href="https://www.youtube.com/watch?v=LXb3EKWsInQ" class="glightbox btn-watch-video d-flex align-items-center"><i class="bi bi-play-circle"></i><span>Ver video</span></a>
           </div>
         </div>
         <div class="col-lg-6 order-1 order-lg-2">
@@ -98,7 +118,7 @@
         <div class="row gy-4">
           <div class="col-lg-4">
             <div class="content px-xl-5">
-              <img src="assets/img/about.svg" class="img-fluid rounded-4 mb-4" alt="">
+              <img src="assets/img/sobre.jpg" class="img-fluid rounded-4 mb-4" alt="">
             </div>
           </div>
 

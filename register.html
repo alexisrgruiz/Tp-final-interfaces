@@ -51,16 +51,37 @@
                 <h1>CoderCasa<span>.</span></h1>
             </a>
             <nav id="navbar" class="navbar">
-                <ul>
-                    <li><a href="#hero">Inicio</a></li>
-                    <li><a href="#about">Programa</a></li>
-                    <li><a href="#cursos">Cursos</a></li>
-                    <li><a href="#">Contacto</a></li>
+                <ul >
+                  <li><a href="#hero">Inicio</a></li>
+                  <li><a href="#about">Programá</a></li>
+                  <li class="dropdown"><a href="#"><span>Cursos</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+                    <ul>
+                      <li><a href="#">Testing</a></li>
+                      <li class="dropdown"><a href="#"><span>Desarrollo web</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+                        <ul>
+                          <li><a href="#">Java</a></li>
+                          <li><a href="#">Python</a></li>
+                          <li><a href="#">Javascript</a></li>
+                          <li><a href="#">Angular</a></li>
+                          <li><a href="#">Typescript</a></li>
+                        </ul>
+                      </li>
+                      <li class="dropdown"><a href="#"><span>Desarrollo mobile</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+                        <ul>
+                          <li><a href="#">Kotlin</a></li>
+                          <li><a href="#">Google</a></li>
+                          <li><a href="#">Dark</a></li>
+                          <li><a href="#">React Native</a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                  <li><a href="#">Contacto</a></li>
                 </ul>
-            </nav><!-- .navbar -->
+              </nav><!-- .navbar -->
             <div class="ms-auto">
-                <a href="#" class="login d-none d-md-inline">Ingresá</a>
-                <a href="#" class="login d-none d-md-inline">Registrarse</a>
+                <a href="login.html" class="login d-none d-md-inline">Ingresá</a>
+                <a href="register.html" class="login d-none d-md-inline">Registrarse</a>
             </div>
 
             <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
@@ -83,7 +104,7 @@
                                 <div class="input-group mb-3">
                                     <input type="text" class="form-control" id="name" aria-describedby="basic-addon3" required>
                                     <div class="invalid-feedback">
-                                        Nombre obligatorio.
+                                        El nombre es obligatorio.
                                       </div>
                                 </div>
                             </div>
@@ -93,7 +114,7 @@
                                 <div class="input-group mb-3">
                                     <input type="text" class="form-control" id="lastName" aria-describedby="basic-addon3" required>
                                     <div class="invalid-feedback">
-                                        Apellido obligatorio.
+                                        El apellido es obligatorio.
                                       </div>
                                 </div>
                             </div>
@@ -103,7 +124,7 @@
                                 <div class="input-group mb-3">
                                     <input type="email" class="form-control" id="email" aria-describedby="basic-addon3" required>
                                     <div class="invalid-feedback">
-                                        Tenes que proporcionar tu email.
+                                         El email es obligatorio.
                                       </div>
                                 </div>
                                 <p>Lo vamos a usar para darte acceso</p>
@@ -128,63 +149,13 @@
                                 <div class="input-group mb-3">
                                     <input type="tel" class="form-control" id="phone" aria-describedby="basic-addon3" required>
                                     <div class="invalid-feedback">
-                                        Teléfono obligatorio.
+                                        El teléfono es obligatorio.
                                       </div>
                                 </div>
                             </div>
        
                             <div class="col-lg-6"></div>
                         </div>  
-                        <div class="row">
-                            <div class="col-lg-6">
-                                <label class="form-label" for="dni">DNI</label>
-                                <label class="form-label obligatorio" for="name">*</label>
-                                <div class="input-group mb-3">
-                                    <input type="number" class="form-control" id="dni" aria-describedby="basic-addon3" required>
-                                    <div class="invalid-feedback">
-                                        DNI obligatorio.
-                                      </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-6">
-                              <label class="form-label" for="dni">Provincia</label>
-                              <label class="form-label obligatorio" for="name">*</label>
-                                <div class="input-group">
-                                  <div class="input-group-prepend">
-                                    <button class="btn dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Seleccionar</button>
-                                    <div id="dropdown" class="dropdown-menu">
-                                      <a class="dropdown-item" href="#">Buenos Aires</a>
-                                      <a class="dropdown-item" href="#">Catamarca</a>
-                                      <a class="dropdown-item" href="#">Chaco</a>
-                                      <a class="dropdown-item" href="#">Chubut</a>
-                                      <a class="dropdown-item" href="#">Córdoba</a>
-                                      <a class="dropdown-item" href="#">Corrientes</a>
-                                      <a class="dropdown-item" href="#">Entre Ríos</a>
-                                      <a class="dropdown-item" href="#">Formosa</a>
-                                      <a class="dropdown-item" href="#">Jujuy</a>
-                                      <a class="dropdown-item" href="#">La Pampa</a>
-                                      <a class="dropdown-item" href="#">La Rioja</a>
-                                      <a class="dropdown-item" href="#">Mendoza</a>
-                                      <a class="dropdown-item" href="#">Misiones</a>
-                                      <a class="dropdown-item" href="#">Neuquén</a>
-                                      <a class="dropdown-item" href="#">Río Negro</a>
-                                      <a class="dropdown-item" href="#">Salta</a>
-                                      <a class="dropdown-item" href="#">San Juan</a>
-                                      <a class="dropdown-item" href="#">San Luis</a>
-                                      <a class="dropdown-item" href="#">Santa Cruz</a>
-                                      <a class="dropdown-item" href="#">Santa Fe</a>
-                                      <a class="dropdown-item" href="#">Santiago del Estero</a>
-                                      <a class="dropdown-item" href="#">Tierra del Fuego</a>
-                                      <a class="dropdown-item" href="#">Tucumán</a>
-                                    </div>
-                                  </div>
-                                  <input type="text" class="form-control" aria-label="Text input with dropdown button" required>
-                                  <div class="invalid-feedback">
-                                    Debe elegir una provincia.
-                                  </div>
-                                </div>
-                              </div>
-                        </div>
                         <div class="col-12">
                             <div class="form-check">
                               <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
@@ -192,12 +163,12 @@
                                 Acepto los términos y condiciones.
                               </label>
                               <div class="invalid-feedback">
-                                tenes que aceptar los términos y condiciones.
+                                Aceptar los términos y condiciones.
                               </div>
                             </div>
                           </div>
                           <div class="col-12 d-flex flex-row-reverse">
-                            <button class="login d-none d-md-inline" type="submit">Siguiente</button>
+                            <a href="login.html" class="login d-none d-md-inline" type="submit">Siguiente</a>
                           </div>
                     </form>
                 </div>

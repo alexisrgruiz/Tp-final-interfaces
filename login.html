@@ -51,16 +51,37 @@
                 <h1>CoderCasa<span>.</span></h1>
             </a>
             <nav id="navbar" class="navbar">
-                <ul>
-                    <li><a href="#hero">Inicio</a></li>
-                    <li><a href="#about">Programa</a></li>
-                    <li><a href="#cursos">Cursos</a></li>
-                    <li><a href="#">Contacto</a></li>
-                </ul>
+              <ul >
+                <li><a href="#hero">Inicio</a></li>
+                <li><a href="#about">Programá</a></li>
+                <li class="dropdown"><a href="#"><span>Cursos</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+                  <ul>
+                    <li><a href="#">Testing</a></li>
+                    <li class="dropdown"><a href="#"><span>Desarrollo web</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+                      <ul>
+                        <li><a href="#">Java</a></li>
+                        <li><a href="#">Python</a></li>
+                        <li><a href="#">Javascript</a></li>
+                        <li><a href="#">Angular</a></li>
+                        <li><a href="#">Typescript</a></li>
+                      </ul>
+                    </li>
+                    <li class="dropdown"><a href="#"><span>Desarrollo mobile</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+                      <ul>
+                        <li><a href="#">Kotlin</a></li>
+                        <li><a href="#">Google</a></li>
+                        <li><a href="#">Dark</a></li>
+                        <li><a href="#">React Native</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+                <li><a href="#">Contacto</a></li>
+              </ul>
             </nav><!-- .navbar -->
             <div class="ms-auto">
-                <a href="#" class="login d-none d-md-inline">Ingresá</a>
-                <a href="#" class="login d-none d-md-inline">Registrarse</a>
+                <a href="login.html" class="login d-none d-md-inline">Ingresá</a>
+                <a href="register.html" class="login d-none d-md-inline">Registrarse</a>
             </div>
 
             <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
@@ -75,26 +96,26 @@
             <div class="container-fluid h-custom">
               <div class="row d-flex justify-content-center align-items-center h-100">
                 <div class="col-md-9 col-lg-6 col-xl-5">
-                  <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-login-form/draw2.webp"
+                  <img src="assets/img/login.jpg"
                     class="img-fluid" alt="Sample image">
                 </div>
                 <div class="col-md-8 col-lg-6 col-xl-4 offset-xl-1">
                   <form>
                     <div class="d-flex flex-row align-items-center justify-content-center justify-content-lg-start">
                       <p class="lead fw-normal mb-0 me-3">Inicia Sesion con</p>
-                      <button type="button" class="login d-md-inline btn-floating mx-1">
+                      <button type="button" class="buttonLogin d-md-inline btn-floating mx-1">
                         <a href="#" class="links"><i class="bi bi-twitter"></i></a>
                       </button>
           
-                      <button type="button" class="login d-md-inline btn-floating mx-1">
+                      <button type="button" class="buttonLogin d-md-inline btn-floating mx-1">
                         <a href="#" class="links"><i class="bi bi-facebook"></i></a>
                       </button>
           
-                      <button type="button" class="login d-md-inline btn-floating mx-1">
+                      <button type="button" class="buttonLogin d-md-inline btn-floating mx-1">
                         <a href="#" class="links"><i class="bi bi-instagram"></i></a>
                       </button>
 
-                      <button type="button" class="login d-md-inline btn-floating mx-1">
+                      <button type="button" class="buttonLogin d-md-inline btn-floating mx-1">
                         <a href="#" class="links"><i class="bi bi-linkedin"></i></i></a>
                       </button>
                     </div>
@@ -107,14 +128,14 @@
                     <div class="form-outline mb-4">
                       <input type="email" id="form3Example3" class="form-control form-control-lg"
                         placeholder="Ingresar correo" />
-                      <label class="form-label" for="form3Example3">Correo Electrónico</label>
+                      <label class="form-label pt-2" for="form3Example3">Correo Electrónico</label>
                     </div>
           
                     <!-- Password input -->
                     <div class="form-outline mb-3">
                       <input type="password" id="form3Example4" class="form-control form-control-lg"
                         placeholder="Ingresar contraseña" />
-                      <label class="form-label" for="form3Example4">Contraseña</label>
+                      <label class="form-label pt-2" for="form3Example4">Contraseña</label>
                     </div>
           
                     <div class="d-flex justify-content-between align-items-center">
@@ -129,8 +150,8 @@
                     </div>
           
                     <div class="text-center text-lg-start mt-4 pt-2">
-                      <button type="button" class="login d-md-inline"
-                        style="padding-left: 2.5rem; padding-right: 2.5rem;">Ingresar</button>
+                      <a href="home.html" type="button" class="login d-md-inline"
+                        style="padding-left: 2.5rem; padding-right: 2.5rem;">Ingresar</a>
                       <p class="small fw-bold mt-2 pt-1 mb-0">No tenes una cuenta? <a href="register.html"
                           class="link-danger">Registrate</a></p>
                     </div>
