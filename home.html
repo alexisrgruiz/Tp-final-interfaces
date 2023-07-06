@@ -83,8 +83,15 @@
           </li>
         </ul>
       </nav><!-- .navbar -->
-        <div class="ms-auto">
-          <a href="#"><i class="bi bi-person-circle profile"></i></a>
+        <div class="ms-auto navbar">
+          <ul>
+            <li class="dropdown"><a href="#"><i class="bi bi-person-circle profile" style="font-size: 25px !important;"></i></a>
+              <ul>
+                <li><a href="#">Perfil</a></li>
+                <li><a href="index.html">Salir</a></li>
+              </ul>
+            </li>
+          </ul>
         </div>
 
       <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
@@ -104,8 +111,49 @@
           </section><!-- End Hero -->
   <main id="main">
 
-     <!-- ======= Precio Section ======= -->
-     <section id="cursos" class="pricing sections-bg">
+        <!-- ======= Features Section ======= -->
+        <section id="features" class="features">
+          <div class="container" data-aos="fade-up">
+
+            <div class="section-header">
+              <h2>CATEGORÍAS</h2>
+              <!-- <p>Aperiam dolorum et et wuia molestias qui eveniet numquam nihil porro incidunt dolores placeat sunt id nobis omnis tiledo stran delop</p> -->
+            </div>
+    
+            <div class="row" data-aos="zoom-in" data-aos-delay="100">
+              <div class="col-lg-3 col-md-4">
+                <div class="icon-box">
+                  <i class="bi bi-laptop"></i>
+                  <h3><a href="">Desarrollo web</a></h3>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
+                <div class="icon-box">
+                  <i class="bi bi-phone"></i>
+                  <h3><a href="">Desarrollo móvil</a></h3>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
+                <div class="icon-box">
+                  <i class="bi bi-cloud-check"></i>
+                  <h3><a href="">Cloud computing</a></h3>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-4 mt-4 mt-lg-0">
+                <div class="icon-box">
+                  <i class="bi bi-shield-check"></i>
+                  <h3><a href="">Testeo de software</a></h3>
+                </div>
+              </div>
+              
+            </div>
+    
+          </div>
+        </section><!-- End Features Section -->
+
+
+            <!-- ======= Courses Section ======= -->
+    <section id="courses" class="courses">
       <div class="container" data-aos="fade-up">
 
         <div class="section-header">
@@ -113,64 +161,83 @@
           <!-- <p>Aperiam dolorum et et wuia molestias qui eveniet numquam nihil porro incidunt dolores placeat sunt id nobis omnis tiledo stran delop</p> -->
         </div>
 
-        <div class="row g-4 py-lg-5" data-aos="zoom-out" data-aos-delay="100">
+        <div class="row" data-aos="zoom-in" data-aos-delay="100">
 
-          <div class="col-lg-4">
-            <div class="pricing-item">
-              <h3>CURSO DE <strong>C# .NET </strong></h3>
-              <div class="icon">
-                <i class="bi bi-braces"></i>
-              </div>
-              <p>
-                Desarrolla aplicaciones en .NET Framework, .NET Core y prepárate para posicionarte...
-              </p>
-              <hr class="border-2 border-top">
-              <p>
-                <strong>5 semanas </strong> (18h)
-              </p>
-              <div class="text-center"><a href="#" class="buy-btn">GUARDAR</a></div>
-            </div>
-          </div><!-- End Pricing Item -->
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+            <div class="course-item">
+              <img src="assets/img/js.jpg" class="img-fluid" alt="...">
+              <div class="course-content">
+                <div class="d-flex justify-content-between align-items-center mb-3">
+                  <h4>Desarrollo Web</h4>
+                </div>
 
-          <div class="col-lg-4">
-            <div class="pricing-item featured">
-              <h3 class="text-left">CURSO DE <strong>JAVASCRIPT DESDE CERO </strong></h3>
-              <div class="icon">
-                <i class="bi bi-braces"></i>
+                <h3><a href="#">CURSO DE C# .NET </a></h3>
+                <p>Desarrolla aplicaciones en .NET Framework, .NET Core y prepárate para posicionarte...</p>
+                <div class="trainer d-flex justify-content-between align-items-center">
+                  <div class="trainer-profile d-flex align-items-center">
+                    <i class="bi bi-person-video3"></i>
+                    <span>12 clases (18h)</span>
+                  </div>
+                  <div class="trainer-rank d-flex align-items-center">
+                    <a href="#" class="guardar-btn">GUARDAR</a>
+                  </div>
+                </div>
               </div>
-              <p>
-                Domina los fundamentos de la programación a través de uno de los lenguajes más utilizados del...
-              </p>
-              <hr class="border-2 border-top">
-              <p>
-                <strong>5 semanas </strong> (18h)
-              </p>
-              <div class="text-center"><a href="#" class="buy-btn">GUARDAR</a></div>
             </div>
-          </div><!-- End Pricing Item -->
+          </div> <!-- End Course Item-->
 
-          <div class="col-lg-4">
-            <div class="pricing-item">
-              <h3>CURSO DE <strong>PYTHON PARA ANÁLISIS DE DATOS </strong></h3>
-              <div class="icon">
-                <i class="bi bi-braces"></i>
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+            <div class="course-item">
+              <img src="assets/img/python.jpg" class="img-fluid" alt="...">
+              <div class="course-content">
+                <div class="d-flex justify-content-between align-items-center mb-3">
+                  <h4>Data Scientist</h4>
+                </div>
+
+                <h3><a href="#">CURSO DE PYTHON PARA ANÁLISIS DE DATOS</a></h3>
+                <p>Domina el lenguaje con mayor proyección en el mundo de los datos. Aprende a utilizar Jupyter...</p>
+                <div class="trainer d-flex justify-content-between align-items-center">
+                  <div class="trainer-profile d-flex align-items-center">
+                    <i class="bi bi-person-video3"></i>
+                    <span>20 clases (40hs)</span>
+                  </div>
+                  <div class="trainer-rank d-flex align-items-center">
+                    <a href="#" class="guardar-btn">GUARDAR</a>
+                  </div>
+                </div>
               </div>
-              <p>
-                Domina el lenguaje con mayor proyección en el mundo de los datos. Aprende a utilizar Jupyter...
-              </p>
-              <hr class="border-2 border-top">
-              <p>
-                <strong>3 semanas </strong> (12h)
-              </p>
-              <div class="text-center"><a href="#" class="buy-btn">GUARDAR</a></div>
             </div>
-          </div><!-- End Pricing Item -->
+          </div> <!-- End Course Item-->
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+            <div class="course-item">
+              <img src="assets/img/c.jpg" class="img-fluid" alt="...">
+              <div class="course-content">
+                <div class="d-flex justify-content-between align-items-center mb-3">
+                  <h4>Desarrollo Web</h4>
+                </div>
+
+                <h3><a href="#">CURSO DE JAVASCRIPT DESDE CERO</a></h3>
+                <p>Domina los fundamentos de la programación a través de uno de los lenguajes más utilizados del...</p>
+                <div class="trainer d-flex justify-content-between align-items-center">
+                  <div class="trainer-profile d-flex align-items-center">
+                    <i class="bi bi-person-video3"></i>
+                    <span>8 clases (16hs)</span>
+                  </div>
+                  <div class="trainer-rank d-flex align-items-center">
+                    <a href="#" class="guardar-btn">GUARDAR</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div> <!-- End Course Item-->
 
         </div>
 
       </div>
-    </section><!-- End Pricing Section -->
+    </section><!-- End Courses Section -->
 
+    
   </main><!-- End #main -->
 
   <!-- ======= Footer ======= -->
