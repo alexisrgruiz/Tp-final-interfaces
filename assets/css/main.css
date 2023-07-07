@@ -2227,6 +2227,7 @@ section {
     line-height: 24px;
     margin-bottom: 30px;
   }
+
 }
 
 
@@ -2307,7 +2308,19 @@ section {
 
 @media (max-width: 640px) {
   .hero h2 {
-    font-size: 36px;
+    font-size: 30px;
+  }
+  .hero h3 {
+    font-size: 40px;
+  }
+  .ocultarImagen{
+    display: none;
+  }
+  .lead{
+    font-size: 16px;
+  }
+  .stats-counter .stats-item span {
+    font-size: 25px !important;
   }
 
   .hero .btn-get-started,
@@ -2329,6 +2342,9 @@ section {
     right: 0;
     height: calc(50% + 20px);
     background-color: #fff;
+  }
+  .ocultar{
+    display: none;
   }
 }
 
